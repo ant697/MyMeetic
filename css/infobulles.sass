@@ -1,0 +1,37 @@
+
+
+.tooltip
+  position: relative
+  display: inline-block
+  padding: 10px
+  opacity: 1 !important
+
+.tooltip .tooltiptext
+  visibility: hidden
+  width: 120px
+  background-color: black
+  color: #fff
+  text-align: center
+  padding: 10px
+  border-radius: 6px
+  position: absolute
+  z-index: 1
+
+.tooltip:hover .tooltiptext
+  visibility: visible
+  &[data-placement="right"]
+    top: -5px
+    left: 105%
+  &[data-placement="left"]
+    top: -5px
+    right: 105%
+  &[data-placement="top"]
+    width: 120px
+    bottom: 100%
+    left: 50%
+    margin-left: -60px
+  &[data-placement="bottom"]
+    width: 120px
+    top: 100%
+    left: 50%
+    margin-left: -60px
